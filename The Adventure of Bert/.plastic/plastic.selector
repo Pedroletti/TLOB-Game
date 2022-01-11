@@ -1,0 +1,4 @@
+repository "The Adventure of Bert@Pedroletti@cloud"
+  path "/"
+    br "/main"
+    co "/main"
