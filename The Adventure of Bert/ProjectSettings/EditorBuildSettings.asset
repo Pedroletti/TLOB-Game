@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Berts Hut/Berts Hut.unity
     guid: ee8fb919a4c3e9a45a0dc7bd6531b754
   - enabled: 1
     path: Assets/Scene 1.unity
     guid: c7f8ec4d2e9dce04e829f21d4739fa9b
+  - enabled: 1
+    path: Assets/Stripclub/StripClub.unity
+    guid: a7d4dd785eb5dd44e833fe6524ff93a6
   m_configObjects: {}
