@@ -38,11 +38,15 @@ public class AnimationScript : MonoBehaviour
         }
 
         /* Walking */
-        if (forwardPressed && velocityX <= 0.5 && !runPressed)
+        if (forwardPressed && velocityX < 0.5 && !runPressed)
         {
-            velocityX += 0.025f;
+            velocityX += 0.05f;
         }
-        else if (forwardPressed && velocityX > 0.5 && !runPressed)
+        else if (forwardPressed && velocityX == 0.5 && !runPressed)
+        {
+            velocityX = 0.5f;
+        }
+        else if (forwardPressed && !runPressed && velocityX > 0.51f)
         {
             velocityX -= 0.05f;
         }
@@ -54,7 +58,7 @@ public class AnimationScript : MonoBehaviour
         /* Running */
         if (runPressed && forwardPressed && velocityX < 1)
         {
-            velocityX += 0.035f;
+            velocityX += 0.05f;
         }
         
         /* Walking left */
